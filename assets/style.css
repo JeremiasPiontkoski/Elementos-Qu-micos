@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +13,7 @@
 
 body {
     background-color: white;
+    color: #313131;
 }
 
 nav {
@@ -53,8 +54,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50rem;
-    margin-block: 1.5rem;
+    gap: 25rem;
+    margin-block: 13rem;
 }
 
 .container {
@@ -93,7 +94,7 @@ section {
 }
 
 .container-left .container-down .container-element {
-    min-width: 5rem;
+    width: 11rem;
     height: auto;
     background-color: white;
     border-radius: 1rem;
@@ -126,13 +127,12 @@ section {
     width: 50%;
     background-color: white;
     border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container-right > h1{
     font-size: 3.5rem;
     font-weight: 500;
-    padding-block: 3rem;
+    padding-block: 4rem;
 }
 
 .container-right > p {
@@ -142,7 +142,7 @@ section {
 
 .container-right > h1,
 .container-right > p {
-    padding-inline: 2.5rem;
+    padding-inline: 7.5rem;
     text-align: justify;
 }
 
