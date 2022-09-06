@@ -8,34 +8,35 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat&display=swap');
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Elementos Químicos</title>
 </head>
 <body>
-    <!-- <nav>
+    <nav>
         <ul>
             <li>
-                <a href="#">Lorem</a>
+                <a href="#potassio">Potássio</a>
             </li>
             <li>
-                <a href="#">Lorem</a>
+                <a href="#cobre">Cobre</a>
             </li>
             <li>
-                <a href="#">Lorem</a>
+                <a href="#bismuto">Bismuto</a>
             </li>
             <li>
-                <a href="#">Lorem</a>
+                <a href="#rubidio">Rubídio</a>
             </li>
             <li>
-                <a href="#">Lorem</a>
+                <a href="#manganes">Manganês</a>
             </li>
             <li>
-                <a href="#">Lorem</a>
+                <a href="#estanho">Estanho</a>
             </li>
         </ul>
-    </nav> -->
+    </nav>
 
     <section>
-        <div class="container">
+        <div class="container" data-aos="fade-left" id="potassio">
             <div class="container-left">
                 <div class="container-up">                    
                     <img src="assets/potassio.png" alt="">
@@ -54,7 +55,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-right" id="cobre">
             <div class="container-left">
                 <div class="container-up">                    
                     <img src="assets/cobre.png" alt="">
@@ -73,7 +74,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-left" id="bismuto">
             <div class="container-left">
                 <div class="container-up">                    
                     <img src="assets/bismuto.png" alt="">
@@ -92,7 +93,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-right" id="rubidio">
             <div class="container-left">
                 <div class="container-up">                    
                     <img src="assets/rubidio.png" alt="">
@@ -111,7 +112,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-left" id="manganes">
             <div class="container-left">
                 <div class="container-up">                    
                     <img src="assets/manages.png" alt="">
@@ -130,7 +131,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-right" id="estanho">
             <div class="container-left">
                 <div class="container-up">                    
                     <img src="assets/estanho.png" alt="">
@@ -150,6 +151,9 @@
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
