@@ -46,8 +46,8 @@ nav ul li a:hover {
     color: rgb(170, 148, 148);
     font-weight: 500;
 } 
-
-section {
+/* 
+/* section {
     max-width: 100vw;
     height: auto;
     display: flex;
@@ -174,4 +174,218 @@ section {
         border-radius: initial;
         border-radius: 15px 15px 0px 0px;
     }
+} 
+*/
+ 
+ section.box {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
+
+section.box .box-content {
+    width: 100%;
+    height: 100%;
+    margin-block: 2rem;
+}
+
+section.box .box-content .box-left {
+    width: 100%;
+    height: 50%;
+}
+
+section.box .box-content .box-left .box-top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+section.box .box-content .box-left .box-top > img{
+    width: 20rem;
+    height: 20rem;
+}
+
+section.box .box-content .box-left .box-bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.box .box-content .box-left .box-bottom .container-element {
+    width: 11rem;
+    height: auto;
+    border-radius: 1rem;
+    border: 2px solid black;
+    margin-block: 2rem;
+}
+
+section.box .box-content .box-left .box-bottom .container-element p:first-child{
+    font-size: 1.6rem;
+}
+
+section.box .box-content .box-left .box-bottom .container-element p:last-child {
+    font-size: 1.8rem;
+}
+
+section.box .box-content .box-left .box-bottom .container-element > h1 {
+    font-size: 4rem;
+}
+
+section.box .box-content .box-left .box-bottom .container-element > h1,
+section.box .box-content .box-left .box-bottom .container-element > p:last-child {
+    text-align: center;
+}
+
+section.box .box-content .box-left .box-bottom .container-element > p {
+    padding-inline: 1rem;
+    padding-block: .5rem;
+}
+
+section.box .box-content .box-right {
+    width: 100%;
+    height: 40%;
+    padding-left: 2rem;
+}
+
+section.box .box-content .box-right .box-names {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.box .box-content .box-right .box-names > h1,
+section.box .box-content .box-right .box-names > h2 {
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    font-size: 2rem;
+}
+
+section.box .box-content .box-right .box-caracter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+section.box .box-content .box-right .box-caracter > span {
+    font-size: 1.6rem;
+    padding-inline: 1rem;
+}
+
+section.box .box-content .box-right .box-text {
+    width: 75%;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    text-align: justify;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section.box .box-content .box-right .box-text > p {
+    font-size: 1.6rem;
+}
+
+section.box .box-content .box-right .box-text > h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+    section.box,
+    section.box .box-content,
+    section.box .box-content .box-left,
+    section.box .box-content .box-left .box-top,
+    section.box .box-content .box-left .box-bottom,
+    section.box .box-content .box-right,
+    section.box .box-content .box-right .box-names
+    {
+        width: initial;
+        height: initial;
+        display: initial;
+        justify-content: initial;
+        align-items: initial;
+        gap: initial;
+        margin: initial;
+        padding: initial;
+    }
+
+    section.box {
+        max-width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2rem;
+
+    }
+
+    section.box .box-content {
+        width: 80%;
+        height: 100%;
+        display: flex;
+    }
+    
+    section.box .box-content .box-left {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.box .box-content .box-left .box-top {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.box .box-content .box-left .box-top > img{
+        width: 75%;
+        height: 75%;
+    }
+
+    section.box .box-content .box-left .box-bottom {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.box .box-content .box-right {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.box .box-content .box-right .box-head {
+       width: 100%;
+       height: auto;
+    }
+
+    section.box .box-content .box-right .box-head .box-names {
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+
+    section.box .box-content .box-right .box-head .box-caracter {
+        padding-block: 1.5rem;
+    }
+
+    section.box .box-content .box-right .box-head .box-caracter > span {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+} 
